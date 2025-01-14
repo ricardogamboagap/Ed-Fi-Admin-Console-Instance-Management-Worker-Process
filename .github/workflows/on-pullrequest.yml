@@ -28,11 +28,11 @@ jobs:
     name: Scan Actions, scan all files for BIDI Trojan Attacks
     uses: ed-fi-alliance-oss/ed-fi-actions/.github/workflows/repository-scanner.yml@main
     permissions:
-      actions: read
-      contents: read
-      pull-requests: read
-      checks: read
-      id-token: read
+      actions: read-all
+      contents: read-all
+      pull-requests: read-all
+      checks: read-all
+      id-token: read-all
     with:
       config-file-path: ./.github/workflows/bidi-config.json
 
